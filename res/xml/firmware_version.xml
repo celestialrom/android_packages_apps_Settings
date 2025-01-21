@@ -21,10 +21,10 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
-    <!-- crDroid logo -->
+    <!-- Celestial logo -->
     <com.android.settingslib.widget.LayoutPreference
-        android:layout="@layout/crdroid_logo"
-        android:key="crdroid_logo"
+        android:layout="@layout/celka_logo"
+        android:key="celka_logo"
         android:selectable="false" />
 
     <!-- Device name -->
@@ -44,13 +44,12 @@
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
 
-    <!-- Lineage version -->
+    <!-- Celestial version -->
     <Preference
-        android:key="lineage_version"
-        android:title="@*lineageos.platform:string/lineage_version"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageVersionDetailPreferenceController"/>
+        android:key="celestial_version"
+        android:title="@string/celestial_version"
+        android:summary="@string/celestial_version1"
+        settings:enableCopying="false"/>
 
     <!-- Security patch -->
     <Preference
